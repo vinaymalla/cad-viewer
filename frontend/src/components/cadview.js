@@ -5,7 +5,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { OrbitControls, Bounds } from "@react-three/drei";
 import { STLLoader } from "three/examples/jsm/loaders/STLLoader";
 import { OBJExporter } from "three/examples/jsm/exporters/OBJExporter";
-import "./cadview.css"; // Updated CSS for cadview.js
+import "./cadview.css"; 
 
 // Model component that loads and displays an STL file
 function Model({ fileUrl }) {
@@ -13,7 +13,7 @@ function Model({ fileUrl }) {
 
   return (
     <mesh geometry={geometry}>
-      <meshStandardMaterial color="#ff9f1c" /> {/* Accent orange */}
+      <meshStandardMaterial color="#ff9f1c" /> {}
     </mesh>
   );
 }
@@ -64,7 +64,7 @@ function CADViewer({ fileUrl, file }) {
             ) : (
               <mesh rotation={[0.5, 0.5, 0]}>
                 <boxGeometry args={[1, 1, 1]} />
-                <meshStandardMaterial color="#495057" /> {/* Dark gray */}
+                <meshStandardMaterial color="#495057" /> {}
               </mesh>
             )}
           </Bounds>
