@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import CADViewer from "./components/cadview";
-import "./App.css"; // Updated CSS for App.js
+import "./App.css"; 
 
 function App() {
   const [fileUrl, setFileUrl] = useState(null);
