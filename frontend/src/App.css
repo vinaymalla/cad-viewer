@@ -1,0 +1,74 @@
+/* General styles */
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #1e1e2f; /* Dark background */
+  color: #ffffff; /* White text */
+  line-height: 1.6;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Header section */
+.header {
+  margin-bottom: 40px;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+  color: #00b4d8; /* Accent blue */
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 1.2rem;
+  color: #a8a8a8; /* Light gray */
+}
+
+/* File upload section */
+.file-upload-container {
+  margin-bottom: 30px;
+}
+
+.file-upload-label {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #00b4d8; /* Accent blue */
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.file-upload-label:hover {
+  background-color: #0096c7; /* Darker blue on hover */
+  transform: scale(1.05);
+}
+
+.file-upload-input {
+  display: none;
+}
+
+/* File info section */
+.file-info {
+  margin-top: 20px;
+  font-size: 1.1rem;
+}
+
+.file-name {
+  color: #00b4d8; /* Accent blue */
+  font-weight: bold;
+}
+
+/* No file message */
+.no-file-message {
+  color: #a8a8a8; /* Light gray */
+  font-style: italic;
+}

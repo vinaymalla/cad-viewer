@@ -1,0 +1,33 @@
+/* CAD Viewer container */
+.cad-viewer-container {
+    margin-top: 30px;
+  }
+
+  .canvas-wrapper {
+    width: 100%;
+    height: 500px;
+    border: 2px solid #00b4d8; /* Accent blue */
+    border-radius: 10px;
+    overflow: hidden;
+    background-color: #2d2d44; /* Darker background */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Convert button */
+  .convert-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    background-color: #ff9f1c; /* Accent orange */
+    color: #1e1e2f; /* Dark text */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .convert-button:hover {
+    background-color: #ff7f00; /* Darker orange on hover */
+    transform: scale(1.05);
+  }
