@@ -24,15 +24,6 @@ app.get('/', (req, res) => {
 
 const upload = multer({ storage });
 
-// STL upload route
-app.post('/upload', upload.single('file'), (req, res) => {
-  if (!req.file) {
-    return res.status(400).json({ error: 'No STL file uploaded' });
-  }
-  res.json({ message: 'STL file uploaded successfully', filePath: `/uploads/${req.file.filename}` });
-});
-
-// OBJ upload route
 app.post('/upload-obj', upload.single('file'), (req, res) => {
   if (!req.file) {
     return res.status(400).json({ error: 'No OBJ file uploaded' });
